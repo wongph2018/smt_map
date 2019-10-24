@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="393dp"
+        android:layout_height="744dp"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_dashboard">
+
+        <TextView
+            android:id="@+id/shop187"
+            android:layout_width="156dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="300dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/shop187"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop189"
+            app:layout_constraintVertical_bias="0.969" />
+
+        <TextView
+            android:id="@+id/shop189"
+            android:layout_width="193dp"
+            android:layout_height="136dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="492dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/shop188"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/shop195B"
+            android:layout_width="43dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="216dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/shop195B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop194"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/shop195A"
+            android:layout_width="43dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="216dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/shop195A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop194" />
+
+        <TextView
+            android:id="@+id/shop194"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="333dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/shop194"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop193" />
+
+        <TextView
+            android:id="@+id/shop193"
+            android:layout_width="95dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="436dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/shop193"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop192"
+            app:layout_constraintVertical_bias="0.785" />
+
+        <TextView
+            android:id="@+id/shop192"
+            android:layout_width="95dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="496dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/shop192"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop190" />
+
+        <TextView
+            android:id="@+id/shop190"
+            android:layout_width="141dp"
+            android:layout_height="127dp"
+            android:layout_marginBottom="560dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/shop190"
+            android:textColorLink="#00DB6666"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/toilet_men"
+            android:layout_width="40dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/shop189"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_aiga_toiletsq_men" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/shop189"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_11954321481710250442wice_wheelchair" />
+
+        <ImageView
+            android:id="@+id/toilet_women"
+            android:layout_width="40dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/shop187"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop189"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_toilet_women" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

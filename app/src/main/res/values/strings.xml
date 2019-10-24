@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">smt_map</string>
+    <string name="title_home">Home</string>
+    <string name="floor_plan">Floor Plan</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="shop187">187</string>
+    <string name="shop188">188-189</string>
+    <string name="shop190">190-191</string>
+    <string name="shop192">192</string>
+    <string name="shop193">193</string>
+    <string name="shop194">194</string>
+    <string name="shop195A">195A</string>
+    <string name="shop195B">195B</string>
+</resources>
