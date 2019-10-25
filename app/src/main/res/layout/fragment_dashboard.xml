@@ -6,10 +6,11 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="393dp"
-        android:layout_height="744dp"
+        android:layout_width="410dp"
+        android:layout_height="728dp"
         android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_dashboard">
 
