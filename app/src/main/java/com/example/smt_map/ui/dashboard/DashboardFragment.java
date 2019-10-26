@@ -64,6 +64,11 @@ public class DashboardFragment extends Fragment {
         checkStatus((TextView) root.findViewById(R.id.shop193), root);
         checkStatus((TextView) root.findViewById(R.id.shop194A), root);
         checkStatus((TextView) root.findViewById(R.id.shop194B), root);
+        checkStatus((TextView) root.findViewById(R.id.shop190), root);
+
+        checkStatus((TextView) root.findViewById(R.id.men), root);
+        checkStatus((TextView) root.findViewById(R.id.women), root);
+        checkStatus((TextView) root.findViewById(R.id.wheelchair), root);
     }
 
     private void checkStatus(TextView text, View root) {

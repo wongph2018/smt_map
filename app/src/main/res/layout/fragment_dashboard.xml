@@ -104,7 +104,6 @@
                     android:layout_height="247dp"
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="16dp"
-                    android:tint="#0C0C0C"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_shop390" />
@@ -212,8 +211,7 @@
                     android:text="@string/shop194B"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/shop193" />
-
-                <ImageView
+                <TextView
                     android:id="@+id/men"
                     android:layout_width="34dp"
                     android:layout_height="42dp"
@@ -221,10 +219,20 @@
                     android:layout_marginEnd="14dp"
                     android:background="@drawable/border"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7">
+
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/men_image"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/imageView7"
                     app:srcCompat="@drawable/ic_aiga_toiletsq_men" />
-
-                <ImageView
+                <TextView
                     android:id="@+id/women"
                     android:layout_width="34dp"
                     android:layout_height="42dp"
@@ -232,20 +240,38 @@
                     android:layout_marginBottom="60dp"
                     android:background="@drawable/border"
                     app:layout_constraintBottom_toTopOf="@+id/shop188"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </TextView>
+                <ImageView
+                    android:id="@+id/women_image"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="60dp"
+                    app:layout_constraintBottom_toTopOf="@+id/shop188"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:srcCompat="@drawable/ic_toilet_women" />
 
-                <ImageView
-                    android:id="@+id/imageView22"
+                <TextView
+                    android:id="@+id/wheelchair"
                     android:layout_width="34dp"
                     android:layout_height="42dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="14dp"
                     android:background="@drawable/border"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/men">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/wheelchair_image"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/men"
                     app:srcCompat="@drawable/ic_11954321481710250442wice_wheelchair" />
-
                 <ImageView
                     android:id="@+id/imageView23"
                     android:layout_width="74dp"

@@ -42,7 +42,7 @@ public class StatusTimer {
                 }
             }
         };
-        int time = ((int) (Math.random() * 10) + 15)* 1000;
+        int time = ((int) (Math.random() * 15) + 10)* 1000;
         System.out.println("StatusTimer - random" + time);
         timer.schedule(timerTask, 0, time);
     }
@@ -52,7 +52,7 @@ public class StatusTimer {
 
         GradientDrawable gradientDrawable = (GradientDrawable) border.findDrawableByLayerId(R.id.shapeList);
 
-        gradientDrawable.setStroke(2, Color.BLACK);
+//        gradientDrawable.setStroke(2, Color.BLACK);
 
         switch (status) {
             case FullyOccupied:
