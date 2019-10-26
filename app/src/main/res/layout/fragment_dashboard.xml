@@ -5,169 +5,323 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="410dp"
-        android:layout_height="728dp"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:background="#F7686767"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_dashboard">
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2_red"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_red"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
 
         <TextView
-            android:id="@+id/shop187"
-            android:layout_width="156dp"
-            android:layout_height="104dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="300dp"
-            android:background="@drawable/border"
+            android:id="@+id/textView_fully"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:gravity="center"
-            android:paddingHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:text="@string/shop187"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop189"
-            app:layout_constraintVertical_bias="0.969" />
+            android:text="@string/fully"
+            android:textColor="#FFFFFFFF" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2_yellow"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_yellow"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
 
         <TextView
-            android:id="@+id/shop189"
-            android:layout_width="193dp"
-            android:layout_height="136dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="492dp"
-            android:background="@drawable/border"
+            android:id="@+id/textView_partial"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:gravity="center"
-            android:paddingHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:text="@string/shop188"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:text="@string/most"
+            android:textColor="#FFFFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2_green"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_green"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
 
         <TextView
-            android:id="@+id/shop195B"
-            android:layout_width="43dp"
-            android:layout_height="113dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="216dp"
-            android:background="@drawable/border"
+            android:id="@+id/textViewMostly"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
             android:gravity="center"
-            android:text="@string/shop195B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop194"
-            app:layout_constraintVertical_bias="0.0" />
+            android:text="@string/partial"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/shop195A"
-            android:layout_width="43dp"
-            android:layout_height="113dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="216dp"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:text="@string/shop195A"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop194" />
-
-        <TextView
-            android:id="@+id/shop194"
-            android:layout_width="95dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="333dp"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:text="@string/shop194"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop193" />
-
-        <TextView
-            android:id="@+id/shop193"
-            android:layout_width="95dp"
-            android:layout_height="59dp"
-            android:layout_marginBottom="436dp"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:text="@string/shop193"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop192"
-            app:layout_constraintVertical_bias="0.785" />
-
-        <TextView
-            android:id="@+id/shop192"
-            android:layout_width="95dp"
-            android:layout_height="59dp"
-            android:layout_marginBottom="496dp"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:text="@string/shop192"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop190" />
-
-        <TextView
-            android:id="@+id/shop190"
-            android:layout_width="141dp"
-            android:layout_height="127dp"
-            android:layout_marginBottom="560dp"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:paddingHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:text="@string/shop190"
-            android:textColorLink="#00DB6666"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageView
-            android:id="@+id/toilet_men"
-            android:layout_width="40dp"
-            android:layout_height="57dp"
-            android:layout_marginEnd="72dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toTopOf="@+id/shop189"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_aiga_toiletsq_men" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="57dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toTopOf="@+id/shop189"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_11954321481710250442wice_wheelchair" />
-
-        <ImageView
-            android:id="@+id/toilet_women"
-            android:layout_width="40dp"
-            android:layout_height="57dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/shop187"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shop189"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_toilet_women" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/text_dashboard"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="985dp">
+
+                <TextView
+                    android:id="@+id/shop194A"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop194A"
+                    app:layout_constraintStart_toEndOf="@+id/shop194B"
+                    app:layout_constraintTop_toTopOf="@+id/shop193" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="398dp"
+                    android:layout_height="247dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:tint="#0C0C0C"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_shop390" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="39dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="60dp"
+                    android:tint="#DC773685"
+                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7"
+                    app:srcCompat="@drawable/ic_coupon" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="165dp"
+                    android:layout_height="109dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="85dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shop194A"
+                    app:srcCompat="@drawable/ic_shop386" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="158dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="55dp"
+                    android:background="#00FF0505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shop194A"
+                    app:srcCompat="@drawable/ic_shop387" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="179dp"
+                    android:layout_height="119dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="8dp"
+                    android:rotation="0"
+                    android:scaleX="-1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/shop190"
+                    app:srcCompat="@drawable/ic_shop386" />
+
+                <TextView
+                    android:id="@+id/shop193"
+                    android:layout_width="138dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="175dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop193"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/shop190"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="176dp"
+                    android:layout_marginEnd="69dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop190"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/shop188"
+                    android:layout_width="153dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="112dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop188"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+                <TextView
+                    android:id="@+id/shop187"
+                    android:layout_width="75dp"
+                    android:layout_height="248dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop187"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shop188" />
+
+                <TextView
+                    android:id="@+id/shop194B"
+                    android:layout_width="65dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="@string/shop194B"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/shop193" />
+
+                <ImageView
+                    android:id="@+id/men"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7"
+                    app:srcCompat="@drawable/ic_aiga_toiletsq_men" />
+
+                <ImageView
+                    android:id="@+id/women"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintBottom_toTopOf="@+id/shop188"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_toilet_women" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="34dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/men"
+                    app:srcCompat="@drawable/ic_11954321481710250442wice_wheelchair" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="74dp"
+                    android:layout_height="116dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="308dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                    app:srcCompat="@drawable/ic_aiga_elevator" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginTop="72dp"
+                    android:text="@string/shop191"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="92dp"
+                    android:text="@string/shop189"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                    app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/shop195B"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="56dp"
+                    android:text="@string/shop195A"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="39dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="64dp"
+                    android:tint="#DC773685"
+                    app:layout_constraintStart_toStartOf="@+id/imageView13"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10"
+                    app:srcCompat="@drawable/ic_coupon" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="39dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="32dp"
+                    android:tint="#DC773685"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                    app:layout_constraintTop_toTopOf="@+id/imageView17"
+                    app:srcCompat="@drawable/ic_coupon" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

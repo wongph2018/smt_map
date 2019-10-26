@@ -72,7 +72,7 @@
             android:padding="5dp"></LinearLayout>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/shop193"
             android:text="@string/most"
             android:layout_width="100dp"
             android:layout_height="match_parent"
