@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,4 +17,68 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="42dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_red"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_fully"
+            android:text="@string/fully"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_yellow"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_partial"
+            android:text="@string/partial"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/top_bar_circle_green"
+            android:orientation="vertical"
+            android:padding="5dp"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="@string/most"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

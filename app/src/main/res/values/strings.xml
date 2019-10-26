@@ -12,4 +12,7 @@
     <string name="shop194">194</string>
     <string name="shop195A">195A</string>
     <string name="shop195B">195B</string>
+    <string name="fully">Fully Occupied</string>
+    <string name="partial">Partially Occupied</string>
+    <string name="most">Mostly Occupied</string>
 </resources>
