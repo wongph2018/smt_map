@@ -2,6 +2,7 @@ package com.example.smt_map.ui.dashboard;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.smt_map.MainActivity;
 import com.example.smt_map.R;
+import com.example.smt_map.StatusTimer;
 
 public class DashboardFragment extends Fragment {
 
@@ -33,24 +36,39 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-
-        this.changeColorRandomly(root);
+        checkStatus(root);
+//        this.changeColorRandomly(root);
 
         return root;
     }
+//
+//    private void changeColorRandomly(View root){
+//
+//
+//        TextView shop190 = root.findViewById(R.id.shop190);
+//        shop190.setBackgroundColor(Color.YELLOW);
+//
+//        ImageView toilet_men = root.findViewById(R.id.toilet_men);
+//        toilet_men.setColorFilter(Color.GREEN);
+//
+//        ImageView toilet_women = root.findViewById(R.id.toilet_women);
+//        toilet_women.setColorFilter(Color.RED);
+//
+//    }
 
-    private void changeColorRandomly(View root){
 
 
-        TextView shop190 = root.findViewById(R.id.shop190);
-        shop190.setBackgroundColor(Color.YELLOW);
+    private void checkStatus(View root) {
+        checkStatus((TextView) root.findViewById(R.id.shop187), root);
+        checkStatus((TextView) root.findViewById(R.id.shop189), root);
+        checkStatus((TextView) root.findViewById(R.id.shop190), root);
+        checkStatus((TextView) root.findViewById(R.id.shop192), root);
+        checkStatus((TextView) root.findViewById(R.id.shop193), root);
+    }
 
-        ImageView toilet_men = root.findViewById(R.id.toilet_men);
-        toilet_men.setColorFilter(Color.GREEN);
-
-        ImageView toilet_women = root.findViewById(R.id.toilet_women);
-        toilet_women.setColorFilter(Color.RED);
-
+    private void checkStatus(TextView text, View root) {
+        Log.i("DashboardFragment",  "text: " + text);
+        StatusTimer statusTimer = new StatusTimer(text, root.getContext());
     }
 
 }
